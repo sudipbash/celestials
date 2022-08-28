@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200;400;500;600;700;800&display=swap');
+
+/*let's do some code*/
+:root{
+    --primary-clr: #403DD4;
+    --text-light: #D1D0F2;
+    --white: #fff;
+    --dark: #0D0D0D;
+    --text-sec: #696969;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: var(--white);
+}
+body{
+    background-color: var(--dark);
+    padding: 3rem 7rem;
+}
+img{
+    -webkit-user-drag: none;
+}
+.logo{
+    height: 4rem;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav > ul > li > a{
+    color: var(--text-light);
+    list-style: none;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all ease 0.5s;
+}
+nav > ul > li > a:hover{
+    color: var(--white);
+}
+nav > ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+.primary-btn{
+    padding: 0.3rem 0.8rem;
+    background-color: var(--primary-clr);
+    border-radius: 5px;
+    position: relative;
+}
+.primary-clr{
+    color: var(--primary-clr);
+}
+.statement{
+    font-size: 3rem;
+    letter-spacing: -3px;
+    line-height: 3.5rem;
+    margin-bottom: 1rem;
+}
+.subtitle{
+    font-size: 0.9rem;
+    color: var(--text-sec);
+    margin-bottom: 2rem;
+}
+main{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.landing-img{
+    animation-name: float;
+    animation-duration: 7s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes float{
+    from{
+        transform: translateY(-1rem);
+    }
+    to{
+        transform: translateY(1rem);
+    }
+}
+.content{
+    width: 50%;
+}
+.btn{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 0.8rem;
+    transition: all ease-in 0.1s;
+}
+.btn:hover{
+    cursor: pointer;
+    gap: 1rem;
+}
+.cta-btn{
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: var(--primary-clr);
+}
+.arrow{
+    width: 1rem;
+}
