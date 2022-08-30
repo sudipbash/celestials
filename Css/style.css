@@ -8,6 +8,7 @@
     --mid-: #242424;
     --dark: #0D0D0D;
     --text-sec: #696969;
+    --light-blue: #6F6DE5;
 }
 ::-webkit-scrollbar{
     width: 0.9rem;
@@ -26,32 +27,32 @@
 body{
     background-color: var(--dark);
     padding: 3rem 10rem;
+    padding-bottom: 0;
     overflow-x: hidden;
 }
 img{
     -webkit-user-drag: none;
 }
 .logo{
-    height: 4rem;
+    width: 10rem;
 }
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-nav > ul > li > a{
+ul > li > a{
     color: var(--text-light);
     list-style: none;
     text-decoration: none;
     font-size: 0.9rem;
     transition: all ease 0.5s;
 }
-nav > ul > li > a:hover{
+ul > li > a:hover{
     color: var(--white);
 }
-nav > ul{
+ul{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     gap: 2rem;
     list-style: none;
@@ -155,7 +156,7 @@ article{
     flex-direction: column;
     gap: 0.5rem;
     margin-top: 8rem;
-    background-image: url("../images/hackathon2.png");
+    background-image: url("../images/hackathon.png");
     margin-left: -10rem;
     width: 100vw;
     height: 20rem;
@@ -172,6 +173,7 @@ article{
     margin-top: 8rem;
     display: flex;
     justify-content: space-between;
+    gap: 5rem;
 }
 .features-header{
     display: flex;
@@ -186,5 +188,48 @@ article{
     font-size: 1rem;
 }
 .features-icon{
-    width: 6rem;
+    width: 1.5rem;
+    margin-bottom: 1rem;
+}
+.features-heading{
+    font-size: 1.8rem;
+}
+.objective{
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.objective-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    text-align: center;
+}
+.objective-img{
+    margin-top: 2rem;
+}
+footer{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-clr);
+    height: 17rem;
+    margin-left: -10rem;
+    margin-top: 10rem;
+    padding: 3rem 10rem;
+}
+.footer-logo{
+    width: 10rem; 
+}
+.copyright{
+    margin: 1.5rem 0;
+}
+.footer-link{
+    width: 100%;
+    display: flex;
+    border-top: 2px solid var(--light-blue);
+    padding: 1rem 0;
 }
