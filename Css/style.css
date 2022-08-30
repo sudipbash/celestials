@@ -24,6 +24,7 @@
     padding: 0;
     font-family: 'Be Vietnam Pro', sans-serif;
     color: var(--white);
+    scroll-behavior: smooth;
 }
 body{
     background-color: var(--dark);
@@ -36,6 +37,9 @@ img{
 }
 .logo{
     width: 10rem;
+}
+.logo:hover{
+    cursor: pointer;
 }
 nav{
     display: flex;
@@ -381,4 +385,10 @@ footer{
     border: none;
     outline: none;
     transition: all ease-out 0.2s;
+}
+.email-data{
+    font-size: 1.1rem;
+}
+.active-link{
+    color: var(--primary-clr);
 }
